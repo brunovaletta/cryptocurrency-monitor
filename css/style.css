@@ -1,1 +1,29 @@
+.bold {
+  font-weight: bold !important;
+}
 
+.img-center {
+  margin: 10px 40%;
+  width: 20%;
+}
+
+.full-height {
+  height: 92vh;
+  margin: 2vh;
+}
+
+.price {
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.caixa-resultado {
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.resultado {
+  font-size: 22px;
+}
