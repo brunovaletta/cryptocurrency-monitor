@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investimentos Criptomoeda</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./css/materialize.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="valign-wrapper">
+    <div class="container row">
+      <div class="card grey lighten-2 col s5 full-height z-depth-5">
+        <div class="card-content">
+          <span class="card-title bold center-align">Bitcoin (BTC)</span>
+          <img src="img/bitcoin.png" class="img-center" />
+          <h5 class="center-align">Cotação</h5>
+          <div class="center-align">
+            <span id="BTCBRL" class="price"></span>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="R$ 5.000,00" placeholder="R$ 10.000,00" id="BTC_invested" type="text" onchange="formatBRL(this)">
+              <label for="BTC_invested">Valor Investido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="R$ 96.161,24" placeholder="R$ 100.000,00" id="BTC_buyprice" type="text" onchange="formatBRL(this)">
+              <label for="BTC_buyprice">Cotação de Compra</label>
+            </div>
+          </div>
+            <h5 class="center-align">Resultado</h5>
+          <div id="BTC_resultbox" class="row caixa-resultado resultado">
+            <h5 id="BTC_resultvalue" class="resultado col s6 push-s1"></h5>
+            <h5 id="BTC_resultpercentage" class="resultado col s6"></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card grey lighten-2 col s5 push-s1 full-height z-depth-5">
+        <div class="card-content">
+          <span class="card-title bold center-align">Ethereum (ETH)</span>
+          <img src="img/ethereum.png" class="img-center" />
+          <h5 class="center-align">Cotação</h5>
+          <div class="center-align">
+            <span id="ETHBRL" class="price"></span>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="R$ 2.500,00" placeholder="R$ 10.000,00" id="ETH_invested" type="text" onchange="formatBRL(this)">
+              <label for="ETH_invested">Valor Investido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="R$ 3.313,96" placeholder="R$ 3.000,00" id="ETH_buyprice" type="text" onchange="formatBRL(this)">
+              <label for="ETH_buyprice">Cotação de Compra</label>
+            </div>
+          </div>
+            <h5 class="center-align">Resultado</h5>
+          <div id="ETH_resultbox" class="row caixa-resultado resultado">
+            <h5 id="ETH_resultvalue" class="resultado col s6 push-s1"></h5>
+            <h5 id="ETH_resultpercentage" class="resultado col s6"></h5>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
